@@ -60,7 +60,7 @@ const ImmersiveSection = () => (
                   it.title === "Robótica"
                     ? { objectPosition: "65% center" }
                     : it.title === "Hologramas"
-                    ? { objectPosition: "40% center" }
+                    ? { objectPosition: "35% center" }
                     : it.title === "Mkt Sensorial"
                     ? { objectPosition: "30% center" }
                     : it.title === "Realidad Virtual"
