@@ -67,8 +67,8 @@ const DigitalSignageSection = () => (
           >
             <img
               src={totemMain}
-              alt="Tótem digital interactivo principal con anuncio"
-              className="w-full h-full object-cover object-[75%_center]"
+              alt="Tótem digital interactivo en lobby de hotel mostrando contenido de piscina"
+              className="w-full h-full object-cover object-center"
               loading="lazy"
               width={1024}
               height={1280}
