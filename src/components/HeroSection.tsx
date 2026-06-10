@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import LogopostLogo from "./LogopostLogo";
-import generico from "@/assets/generico.png";
+import generico from "@/assets/images (7).png";
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 16 },
@@ -55,13 +55,9 @@ const HeroSection = () => (
       {/* 4. Proposal info */}
       <motion.div className="flex flex-col items-center gap-1.5 mt-2" {...fadeUp(0.6)}>
         <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Nombre de cliente:</span> <span className="text-foreground/80">[Empresa]</span>
+          <span className="opacity-60">Nombre de cliente:</span> <span className="text-foreground/80">Iberostar</span>
           <span className="mx-3 opacity-30">|</span>
-          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">[DD/MM/AAAA]</span>
-        </p>
-        <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Persona de contacto:</span>{" "}
-          <span className="text-foreground/80">[Nombre y apellidos]</span>
+          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">[10/06/2026]</span>
         </p>
         <p className="text-sm text-muted-foreground">
           <span className="opacity-60">Creado por:</span> <span className="text-foreground/80">David Ochoa Tapia</span>
