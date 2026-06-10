@@ -14,13 +14,20 @@ const HeroSection = () => (
     <div className="absolute inset-0 overflow-hidden">
       <motion.div
         className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full opacity-[0.07]"
-        style={{ background: "radial-gradient(circle, hsl(var(--accent)) 0%, transparent 70%)" }}
+        style={{
+          background:
+            "radial-gradient(circle, hsl(var(--accent)) 0%, transparent 70%)",
+        }}
         animate={{ scale: [1, 1.2, 1], x: [0, 30, 0], y: [0, -20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
+
       <motion.div
         className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full opacity-[0.05]"
-        style={{ background: "radial-gradient(circle, hsl(var(--accent)) 0%, transparent 70%)" }}
+        style={{
+          background:
+            "radial-gradient(circle, hsl(var(--accent)) 0%, transparent 70%)",
+        }}
         animate={{ scale: [1, 1.15, 1], x: [0, -20, 0], y: [0, 30, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -30,11 +37,18 @@ const HeroSection = () => (
     <div className="relative z-10 flex flex-col items-center gap-8 max-w-3xl w-full">
       {/* 1. Client logo */}
       <motion.div {...fadeUp(0.1)}>
-         <img src={generico} alt="Generico" className="h-20 md:h-24 w-auto" />
+        <img
+          src={generico}
+          alt="Iberostar"
+          className="h-28 md:h-36 lg:h-40 w-auto object-contain"
+        />
       </motion.div>
 
       {/* 2. Label */}
-      <motion.span className="text-xs uppercase tracking-[0.35em] text-muted-foreground/70" {...fadeUp(0.25)}>
+      <motion.span
+        className="text-xs uppercase tracking-[0.35em] text-muted-foreground/70"
+        {...fadeUp(0.25)}
+      >
         Propuesta de
       </motion.span>
 
@@ -44,7 +58,10 @@ const HeroSection = () => (
       </motion.div>
 
       {/* 3.5 Tagline */}
-      <motion.div className="flex items-center gap-4 w-full max-w-md" {...fadeUp(0.5)}>
+      <motion.div
+        className="flex items-center gap-4 w-full max-w-md"
+        {...fadeUp(0.5)}
+      >
         <span className="h-px flex-1 bg-accent/60" />
         <span className="text-sm uppercase tracking-[0.3em] text-accent font-medium whitespace-nowrap">
           Línea digital
@@ -53,15 +70,23 @@ const HeroSection = () => (
       </motion.div>
 
       {/* 4. Proposal info */}
-      <motion.div className="flex flex-col items-center gap-1.5 mt-2" {...fadeUp(0.6)}>
+      <motion.div
+        className="flex flex-col items-center gap-1.5 mt-2"
+        {...fadeUp(0.6)}
+      >
         <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Nombre de cliente:</span> <span className="text-foreground/80">Iberostar</span>
+          <span className="opacity-60">Nombre de cliente:</span>{" "}
+          <span className="text-foreground/80">Iberostar</span>
           <span className="mx-3 opacity-30">|</span>
-          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">[10/06/2026]</span>
+          <span className="opacity-60">Fecha:</span>{" "}
+          <span className="text-foreground/80">[10/06/2026]</span>
         </p>
+
         <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Creado por:</span> <span className="text-foreground/80">David Ochoa Tapia</span>
+          <span className="opacity-60">Creado por:</span>{" "}
+          <span className="text-foreground/80">David Ochoa Tapia</span>
         </p>
+
         <p className="text-xs text-muted-foreground/60 italic">
           Responsable del Departamento de Tecnología e Innovación
         </p>
